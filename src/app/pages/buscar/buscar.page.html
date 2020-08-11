@@ -1,0 +1,92 @@
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-fab-button
+          color="light"
+          routerLink="/inicio"
+        >
+          <ion-img src="/assets/Volver.svg">esta asdfasd</ion-img>
+        </ion-fab-button>
+      </ion-col>
+
+      <ion-title></ion-title>
+
+      <ion-col size="6">
+        <ion-img
+          class="imagen animate__animated animate__rubberBand"
+          src="/assets/caritaojos.svg"
+        ></ion-img>
+      </ion-col>
+    </ion-row>
+
+    <br>
+
+    <ion-card>
+      <ion-card-content class="animate__animated" [ngClass]="{'animate__flipInX': mostrar}" >
+        {{mensaje}} 
+      </ion-card-content>
+    </ion-card>
+  </ion-grid>
+
+  <br>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col
+        size="2"
+        class="ion-align-self-center"
+      >
+        <label style="font-size: 120%; color: rgb(0, 0, 0); font-family: Cooper Black;">Tipo</label>
+      </ion-col>
+
+      <ion-col size="6">
+        <ion-item
+          class="item"
+          color="light"
+        >
+          <ion-select [(ngModel)]="TipoDocumento">
+            <ion-item-option *ngFor="let chek of TipoDato">
+              <ion-label>Tipo Documento</ion-label>
+
+              <ion-select-option [value]="chek.tipo">
+                <ion-label>{{chek.nombre}}</ion-label>
+              </ion-select-option>
+            </ion-item-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-label
+          class="titulo  ion-text-center"
+          style="font-size: 135%; color: rgb(0, 0, 0); font-family: Cooper Black;"
+        >
+          Número de documento encontrado
+        </ion-label>
+
+        <ion-input
+          [(ngModel)]="NumDocumento"
+          id="NumDoc"
+          type="number"
+          class="btn"
+          placeholder="Ingrese el documento encontrado"
+        ></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-justify-content-end">
+      <ion-col size="8">
+        <ion-button
+          color="light"
+          class="btnBuscar"
+          (click)="getDocumento(TipoDocumento, NumDocumento )"
+        >Buscar</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

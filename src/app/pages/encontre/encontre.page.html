@@ -1,0 +1,75 @@
+<ion-content>  
+  <ion-grid>
+   <ion-row>
+      <ion-col >
+        <ion-fab-button color="light" routerLink="/inicio"> 
+        <ion-img src="/assets/Volver.svg" > hola esto es una prueba afafas </ion-img>
+      </ion-fab-button>
+      </ion-col>
+
+      <ion-title></ion-title>
+      
+      <ion-col size="6"  >
+        <ion-img class="imagen" src="/assets/caritaojos.svg"  class="animate__animated animate__rubberBand" ></ion-img>
+      </ion-col> 
+    </ion-row>
+
+    <ion-card>
+      <ion-card-content class="animate__animated" [ngClass]="{'animate__flipInX': mostrar}" >        
+             {{mensaje}} 
+      </ion-card-content>
+    </ion-card>    
+  </ion-grid>
+  
+    <ion-grid>
+      <ion-row>
+        <ion-col  size="2" class="ion-align-self-center">
+          <label style="font-size: 120%; color: rgb(0, 0, 0); font-family: Cooper Black;"> Tipo </label>
+        </ion-col>
+        <ion-col size="6" >
+          
+
+            <ion-item class="item" color="light" >                     
+              <ion-select [(ngModel)]="TipoDocumento">
+                <ion-item-option *ngFor="let chek of TipoDato">
+                  <ion-label>Tipo Documento</ion-label>
+    
+                  <ion-select-option [value]="chek.tipo">  
+                      <ion-label>{{chek.nombre}}</ion-label>                
+                  </ion-select-option>
+                  
+                </ion-item-option>              
+              </ion-select>
+            </ion-item>          
+          
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+
+
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12">
+          <ion-label class="titulo  ion-text-center" style="font-size: 135%; color: rgb(0, 0, 0); font-family: Cooper Black;" >
+            Número de documento encontrado
+          </ion-label>
+          <ion-input   [(ngModel)]="NumDocumento"     type="number" class="btn" placeholder="Ingrese el documento encontrado"></ion-input>
+        </ion-col>
+
+        <ion-col size="12">
+          <ion-label class="titulo  ion-text-center" style="font-size: 135%; color: rgb(0, 0, 0); font-family: Cooper Black;" >
+            Tu Número de celular
+          </ion-label>
+          <ion-input  [(ngModel)]="NumTelefono"   type="number" class="btn" placeholder="Ingrese su número de celular" ></ion-input>
+        </ion-col>               
+      </ion-row>
+
+
+      <ion-row >
+        <ion-col  size="7">
+          <ion-button  (click)="GuardarDatos(TipoDocumento,NumDocumento,NumTelefono)" color="light" class="btnRegistar"> Registrar</ion-button>          
+        </ion-col>
+      </ion-row>
+   </ion-grid>
+</ion-content>

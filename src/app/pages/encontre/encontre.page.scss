@@ -1,0 +1,73 @@
+// ion-content{
+//     --ion-background-color:#55acf1;
+//   }
+  ion-card-content{
+    background-color: white;
+    color: black;
+    font-family:cooper;
+    font-size: 130%;
+    border-radius: 12px;
+    border: solid 3px black;
+  }
+
+  ion-col.label{
+    color: black;
+    font-family:cooper;
+    font-size: 130%;
+  }
+
+  ion-input.btn{
+    border-radius: 12px;
+    border: solid 3px black;
+    background-color: white;
+    font-size: 150%;
+    color: black;
+  }
+  ion-item.item{
+    background-color: white;
+    color: rgb(255, 255, 255);
+    border-radius: 12px;
+    border: solid 3px black;
+  }
+  // ion-row.btnRegistrar{
+  //   background-color: rgb(255, 255, 255);
+  //   text-align: right;
+  //   color: black;
+  //   border: solid 1px black;
+  //   border-radius: 5px;
+  //   font-family: Cooper Black;
+  //   font-size: 150%;
+  // }
+
+ 
+  ion-button.btnRegistar{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 150%;  
+    border-radius: 12px;
+    border: solid 3px black;  
+    margin-right: 2px;
+  }
+
+  ion-item.item{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100%; 
+    margin: 0;
+    padding: 0;
+
+  }
+
+  ion-fab-button{
+    height: 90px;
+    width: 90px;
+    
+  }
+
+ .my-custom-class.message {
+   text-align: center;
+ }
+ ::ng-deep .alert-message{
+   Font-size: 20px !important;
+ }
+  
