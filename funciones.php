@@ -11,7 +11,7 @@
 		}
 	}
 
-	//esto es un comentario
+	//esto es un comentariovDFA
     
 	function Documento($tipo,$num){
 		$query = "select * from documento where numero='$num' AND tipo_tipo_doc=$tipo";
