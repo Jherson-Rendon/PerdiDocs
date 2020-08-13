@@ -10,6 +10,8 @@
 		    return ConvertirUTF8($respuesta);
 		}
 	}
+
+	//esto es un comentario
     
 	function Documento($tipo,$num){
 		$query = "select * from documento where numero='$num' AND tipo_tipo_doc=$tipo";
