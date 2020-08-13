@@ -96,16 +96,12 @@
 //   --ion-background-color:#558cf1;
 // }
 
-
-
-.verde{
-  --ion-background-color:#55f162;
-}
-.rosa{
-  --ion-background-color:#f155e9;
-}
-
-
+// .verde{
+//   --ion-background-color:#55f162;
+// }
+// .rosa{
+//   --ion-background-color:#f155e9;
+// }
 
 @media (prefers-color-scheme: dark) {
   /*
@@ -220,19 +216,6 @@
    * Material Design Dark Theme
    * -------------------------------------------
    */
-  body.verde {
-    ion-content{
-      --ion-background-color: #50ff67;
-    }
-  }
-  body.morado {
-    ion-content{
-      --ion-background-color: #B57EDC;
-    }
-  }
-  ion-content{
-    --ion-background-color: #558cf1;
-  }
 
 
   .md body {
@@ -267,5 +250,23 @@
     --ion-toolbar-background: #1f1f1f;
     --ion-tab-bar-background: #1f1f1f;
   }
+
+
   
+}
+
+body.verde {
+  ion-content{
+    --ion-background-color: #50ff67;
+  }
+}
+body.morado {
+  ion-content{
+    --ion-background-color: #B57EDC;
+  }
+}
+body.azul {
+  ion-content{
+    --ion-background-color: #558cf1;
+  }
 }

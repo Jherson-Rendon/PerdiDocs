@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { TareasService } from '../../services/tareas.service';
 import { AlertController } from '@ionic/angular';
 import { NgModel } from '@angular/forms';
+import { Mensaje } from '../../../../../../Proyectos github/QuieroJugar/src/app/interfaces/interfaces';
 
 
 @Component({
@@ -53,8 +54,10 @@ export class BuscarPage implements OnInit {
 
   getDocumento(TipoDocumento, NumDocumento) {
     this.mostrar = false;
-    this.tareasService.getDato(TipoDocumento, NumDocumento).subscribe(todos => {
+    // this.mensaje = "buscando....";
+      this.tareasService.getDato(TipoDocumento, NumDocumento).subscribe(todos => {
       if (!todos.estado_error) {
+
         
         this.NumTelefono = todos[0].contacto
         // console.log(todos[0].estado_error); 
@@ -67,8 +70,13 @@ export class BuscarPage implements OnInit {
       // this.presentAlert();
       }
       else{
+        
         this.mensaje = todos.mensaje;
       }
+      // if (!todos.mensaje) {
+      //   this.mensaje = "no hay internet";        
+      // }
+
       
     });
   }

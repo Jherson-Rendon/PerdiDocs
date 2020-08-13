@@ -44,7 +44,7 @@ export class EncontrePage implements OnInit {
    this.mensaje = this.getMensajes().bvEncontro;
   }
 
-  GuardarDatos() {
+  GuardarDatos(tipo, contacto, numero) {
     const Datos = {
       tipo: this.TipoDocumento.toString(),
       contacto: this.NumTelefono.toString(),
