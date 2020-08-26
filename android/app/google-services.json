@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "962783007701",
+    "firebase_url": "https://pruebaperdidocs.firebaseio.com",
+    "project_id": "pruebaperdidocs",
+    "storage_bucket": "pruebaperdidocs.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962783007701:android:f8cafe01efc8a09287a35c",
+        "android_client_info": {
+          "package_name": "io.ionic.perdidocs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "962783007701-amhoopf7omhp8c7vhue2kspm5d69gv60.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhwKIODyOe1Mc7_y1jVxwcR30ZlC4kCik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "962783007701-amhoopf7omhp8c7vhue2kspm5d69gv60.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
