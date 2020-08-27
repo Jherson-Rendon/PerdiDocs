@@ -7,7 +7,8 @@ import { TareasService } from '../../services/tareas.service';
   selector: 'app-inicio',
   templateUrl: './inicio.page.html',
   styleUrls: ['./inicio.page.scss'],
-})
+  providers: [TareasService],
+}) 
 export class InicioPage implements OnInit {
 
   indexActual = -1;
