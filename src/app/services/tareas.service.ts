@@ -8,21 +8,21 @@ import { Tareas, Datos } from '../interfaces/tareas';
 })
 export class TareasService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) { } 
 
 
   getDatos(){
-    const path = 'http://perdidocs.000webhostapp.com/todosdocumentos';
+    const path ='http://perdidcosapi.atspace.cc/todosdocumentos';
     return this.http.get<Tareas[]>(path);
   }
 
   getDato(tipo: string, documento: number){
-    const path = `http://perdidocs.000webhostapp.com/documentos?t='${tipo}'&d=${documento}`; 
+    const path = `http://perdidcosapi.atspace.cc/documentos?t='${tipo}'&d=${documento}`; 
     return this.http.get<Tareas>(path);
   }
 
   crearDato(dato){
-    const path = 'http://perdidocs.000webhostapp.com/documentos';
+    const path = 'http://perdidcosapi.atspace.cc/documentos';
     return this.http.post(path, JSON.stringify(dato) );
   }
 }
