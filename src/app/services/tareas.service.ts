@@ -8,7 +8,7 @@ import { Tareas, Datos } from '../interfaces/tareas';
 })
 export class TareasService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) { } 
 
 
   getDatos(){
